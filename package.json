@@ -1,0 +1,27 @@
+{
+  "name": "simple-todo-list-with-compiled",
+  "version": "1.0.0",
+  "description": "Techniсal task",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serjk3/fe17-landing2_compiled.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serjk3/fe17-landing2_compiled/issues"
+  },
+  "homepage": "https://github.com/Serjk3/fe17-landing2_compiled#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

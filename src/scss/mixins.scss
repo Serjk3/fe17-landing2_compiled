@@ -1,0 +1,41 @@
+// Миксины
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin btn_h {
+  background: $red_h;
+}
+@mixin btn_a {
+  background: $red;
+  box-shadow: 4px 4px 30px $red;
+}
+@mixin btn_link {
+  padding: 1.5rem 5.5rem;
+  background: $red;
+  transition: all 0.2s ease-out;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@mixin dots_n {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #7e5d6f;
+  cursor: pointer;
+}
+@mixin dots_a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #7e5d6f;
+  cursor: pointer;
+}

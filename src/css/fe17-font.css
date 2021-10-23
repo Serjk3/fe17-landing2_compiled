@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?hxcw40");
+  src: url("../fonts/icomoon.eot?hxcw40#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?hxcw40") format("truetype"),
+    url("../fonts/icomoon.woff?hxcw40") format("woff"),
+    url("../fonts/icomoon.svg?hxcw40#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fe-bulb:before {
+  content: "\e900";
+}
+
+.fe-buy:before {
+  content: "\e901";
+}
+
+.fe-check:before {
+  content: "\e902";
+}
+
+.fe-computer:before {
+  content: "\e903";
+}
+
+.fe-edit:before {
+  content: "\e904";
+}
+
+.fe-facebook:before {
+  content: "\e905";
+}
+
+.fe-linkedin:before {
+  content: "\e906";
+}
+
+.fe-star:before {
+  content: "\e907";
+}
+
+.fe-twetter:before {
+  content: "\e908";
+}

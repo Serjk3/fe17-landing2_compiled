@@ -1,0 +1,15 @@
+// Подключение файлов стилей
+@import "../css/null.css"; // файл обнуления стилей
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./mixins.scss";
+// Стили секций
+@import "./main.scss";
+@import "./header.scss";
+@import "./fullscreen.scss";
+@import "./features.scss";
+@import "./work.scss";
+@import "./ourteam.scss";
+@import "./slider.scss";
+@import "./download.scss";
+@import "./footer.scss";

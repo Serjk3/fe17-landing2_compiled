@@ -1,0 +1,103 @@
+html {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+h5,
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+h6 {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.gotop {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  & i {
+    color: $red;
+    font-size: 3rem;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      color: $red_h;
+    }
+    &:active {
+      color: $red;
+      box-shadow: 1px 1px 30px $red;
+    }
+  }
+}
+
+.btn {
+  @include btn;
+  &_link {
+    @include btn_link;
+    &:hover {
+      @include btn_h;
+    }
+    &:active {
+      @include btn_a;
+    }
+  }
+}
+
+.fe-facebook:hover {
+  color: #445c8f;
+}
+.fe-twetter:hover {
+  color: #18a1d6;
+}
+.fe-linkedin:hover {
+  color: #1d7199;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 97%;
+  }
+}
+@media (max-width: 428px) {
+  .btn {
+    width: 100%;
+    &_link {
+      display: block;
+      width: 100%;
+      &:active {
+        box-shadow: 1px 1px 5px $red;
+      }
+    }
+  }
+}

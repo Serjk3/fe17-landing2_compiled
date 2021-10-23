@@ -1,0 +1,134 @@
+.header {
+  width: 100%;
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-out;
+  z-index: 999;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // margin: 0 -15px;
+    padding-bottom: 25px;
+    border-bottom: $border;
+  }
+}
+
+.header-logo {
+  //   margin: 0 15px;
+  & a {
+    font-weight: 900;
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    color: #656980;
+  }
+  & a::after {
+    content: "box";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.header-menu {
+  //   margin: 0 15px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 3rem;
+    transition: all 0.2s ease-out;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item a {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    transition: all 0.2s ease-out;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -32px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transition: all 0.2s ease-out;
+    }
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+    &::after {
+      transform: scale(0);
+      transform-origin: center;
+    }
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1);
+    }
+    &:active {
+      color: $red_h;
+    }
+    &:active::after {
+      background-color: $red_h;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  //   margin: 0 15px;
+  cursor: pointer;
+  & i {
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+  }
+  & i:active {
+    color: $red_h;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 0.75rem;
+  }
+  .header {
+    padding: 20px 0;
+    &-wrapper {
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+    &-wrapper {
+      border: none;
+    }
+    &-menu {
+      display: none;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (max-width: 428px) {
+  html {
+    font-size: 0.5625rem;
+  }
+  .header {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,43 @@
+.download {
+  padding: 114px 0;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.1875rem;
+    color: $black;
+    margin: 0 15px 10px;
+  }
+  &-subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3125rem;
+    color: $black;
+    margin: 0 15px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .download {
+    padding: 78px 0;
+  }
+}
+@media (max-width: 768px) {
+  .download-wrapper {
+    margin: 0;
+  }
+}
+@media (max-width: 428px) {
+  .download {
+    padding: 34px 0;
+  }
+}
